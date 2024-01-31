@@ -33,14 +33,18 @@ CUDA (Nvidia) GPU is required.
 can try other models. NH2S 10.7B just barely fits on a 24G GPU. Note that if you use another model, you  ***must*** 
 edit the prompt template (see below). 
 3. Start vLLM (see sample command line below)
-4. Download the extension and decompress it
+4. Download the extension from the [releases page](https://github.com/thomasj02/AiFilter/releases) and decompress it
 5. Go to [chrome://extensions/](chrome://extensions/) and enable developer mode
 6. Choose "Load unpacked" and select the directory containing AI Filter
 7. Click on the extension in Chrome's toolbar and navigate to the options page to edit the instructions, vLLM server URL, and other options
+8. You're all set! Visit X.com and AI Filter should automatically hide the tweets you told it to.
 
 
 #### Tips for getting started:
 
+* Like all LLMs, AI Filter is not perfect. It will sometimes hide tweets that you want to see, and sometimes show tweets
+that you want to hide. If you're not getting the results you want, try tweaking your instructions or try out different models.
+* If you change options (instructions, prompt, etc.) you will need to reload X for the new settings to take effect. 
 * You can use this example command to start vLLM (see vLLM docs for [details of what the flags do](https://docs.vllm.ai/en/latest/models/engine_args.html)): `python -m vllm.entrypoints.openai.api_server --gpu-memory-utilization 0.99 --max-model-len 4096 --enforce-eager --model /path/to/Nous-Hermes-2-SOLAR-10.7B --swap-space 32`
 * If you use a different model, you need to change the prompt template in the extension settings.
 The LLM model card on Huggingface should give an example of what prompt template to use. When setting the prompt template,
@@ -93,7 +97,8 @@ the filter's instructions by hiding what you normally see and showing what you n
 
 * How can I help?
 
-**Engineers**: Submit PRs! There are lots of improvements possible, like improving the UI, adding support for HuggingFace inference and adding support for other social networks
+**Engineers**: Submit PRs! There are lots of improvements possible, like improving the UI, adding support for HuggingFace inference, 
+adding support for other social networks, and cleaning up the code. 
 
 **Local LLM users**: Try different models and prompts, and share the results!
 
