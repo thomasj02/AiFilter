@@ -21,6 +21,8 @@ appropriate tweets in the background as you browse Twitter.
 Note that because it is a Chrome extension, it only works in the browser,
 not with the Twitter / X app on your phone or other device.
 
+[Video demo](Video demo: https://www.youtube.com/watch?v=CligVVTC5io)
+
 ## Getting Started
 
 This project is in the proof of concept stage, which means that it
