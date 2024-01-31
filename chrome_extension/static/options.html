@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Extension Options</title>
+</head>
+<body>
+    <form id="optionsForm">
+        <label for="apiUrl">API URL:</label>
+        <input type="text" id="apiUrl" name="apiUrl">
+        <br>
+        <br>
+        <label for="prompt_instructions">Filter instructions:</label>
+        <br>
+        <textarea id="prompt_instructions" name="prompt_instructions" cols="80" rows="10">
+        </textarea>
+        <br>
+        <br>
+        <label for="hide_threshold">Hide threshold (0.5 - 1.0):</label>
+        <input type="text" id="hide_threshold" name="hide_threshold">
+        <br>
+        <br>
+        <label for="prompt_template">Prompt template (only change if you change the model):</label>
+        <br>
+        <textarea id="prompt_template" name="prompt_template" cols="80" rows="10">
+        </textarea>
+        <br>
+        <br>
+        Don't forget to save after change values
+        <button type="submit">Save</button>
+
+    </form>
+    <script src="options.js"></script>
+</body>
+</html>

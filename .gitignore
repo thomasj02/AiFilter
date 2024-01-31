@@ -1,0 +1,6 @@
+.idea
+*.pyc
+*.log*
+chrome_extension/node_modules
+chrome_extension/bundle.js*
+chrome_extension/.parcel-cache
